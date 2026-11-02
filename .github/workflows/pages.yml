@@ -26,8 +26,8 @@ jobs:
           WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
         run: |
           if [ -z "$WEB3FORMS_ACCESS_KEY" ]; then
-            echo "WEB3FORMS_ACCESS_KEY secret is missing" >&2
-            exit 1
+            echo "::warning::WEB3FORMS_ACCESS_KEY secret is missing; the legacy contact.html form will not submit"
+            exit 0
           fi
           # Replace placeholder in HTML and JS files
           find . -type f \( -name "*.html" -o -name "*.js" \) -print0 | xargs -0 sed -i "s/__WEB3FORMS_ACCESS_KEY__/${WEB3FORMS_ACCESS_KEY//\//\\/}/g"
