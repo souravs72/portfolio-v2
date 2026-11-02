@@ -1,0 +1,28 @@
+# Sourav Singh (souravs72): ERPNext & Frappe Framework developer
+
+> Sourav Singh is a backend developer based in Kolkata, India, specialising in ERPNext and the Frappe Framework. He takes freelance and consulting work from businesses worldwide: ERPNext version upgrades (v13/v14/v15 to v16), ERPNext support and maintenance retainers, custom Frappe app development, integrations and performance fixes. He never edits ERPNext/Frappe core; all changes are delivered as custom Frappe apps under Git.
+
+## Services
+- ERPNext Health Check: fixed-price audit of customisations, core edits, backups, performance and v16 upgrade readiness. From USD 300 (INR 15,000).
+- ERPNext version upgrade (v13/v14/v15 to v16): staging-first upgrade, custom-app fixes, data checks, go-live support. From USD 1,500.
+- ERPNext Care plan: monthly support retainer with a fixed block of hours, response-time commitment, patching and monitoring. From USD 500/month.
+- Custom Frappe app development: DocTypes, workflows, reports, print formats, portals, REST and WhatsApp integrations.
+
+## Who it's for
+Businesses already running ERPNext (self-hosted or Frappe Cloud) without an in-house Frappe developer, especially in the US, UK, Europe, the Middle East and Africa. Remote work with overlapping hours.
+
+## Experience
+- Backend Developer, Ascra Technologies (May 2026 to present): Frappe/ERPNext and Spring Boot.
+- Backend Developer, Alwar Investment Company (May 2024 to May 2026): Spring Boot workflow automation system serving 7,000+ users; ERPNext integrations with WhatsApp, Postman and Swagger/OpenAPI.
+- Assistant Systems Engineer, Tata Consultancy Services (2021 to 2022).
+- B.Tech Computer Science, 2020.
+
+## Open source
+- [frappe_postman_sync](https://github.com/souravs72/frappe_postman_sync): Frappe app that generates CRUD API definitions for DocTypes and syncs them to Postman.
+- [claude-mcp-setup](https://github.com/souravs72/claude-mcp-setup): MCP servers connecting AI assistants to Frappe/ERPNext, GitHub, Jira and more.
+
+## Contact
+- Website: https://souravsingh.site/
+- Email: souravsingh2609@gmail.com
+- GitHub: https://github.com/souravs72
+- LinkedIn: https://www.linkedin.com/in/sourav72/

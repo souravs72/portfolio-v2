@@ -1,391 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="9KTL4-a8MGfeOsz3gnKPgobZhtlV_eeah7WAaZCf_3w" />
-  
-  <!-- Performance Meta Tags -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="theme-color" content="#191f36" />
-  
-  <!-- Performance Optimizations -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
-  <link rel="dns-prefetch" href="https://unpkg.com">
-  
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="style/styles.css" as="style" />
-  <link rel="preload" href="img/profile-photo.JPG" as="image" />
-  
-  <!-- Font Awesome with Optimization -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sourav Singh — ERPNext &amp; Frappe Developer | Upgrades, Custom Apps, Support</title>
+  <meta name="description" content="Sourav Singh (souravs72) is a freelance ERPNext and Frappe Framework developer in Kolkata. He fixes, upgrades and extends ERPNext — v13/v14/v15 to v16 upgrades, custom Frappe apps, integrations and monthly support — without editing core. Works with businesses worldwide.">
+  <link rel="canonical" href="https://souravsingh.site/">
+  <meta name="author" content="Sourav Singh">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Sourav Singh — ERPNext &amp; Frappe Developer">
+  <meta property="og:description" content="Upgrade-safe ERPNext work: v16 upgrades, custom Frappe apps, integrations, performance fixes and monthly care plans.">
+  <meta property="og:url" content="https://souravsingh.site/">
+  <meta property="og:image" content="https://souravsingh.site/img/og.png">
+  <meta property="profile:first_name" content="Sourav">
+  <meta property="profile:last_name" content="Singh">
+  <meta property="profile:username" content="souravs72">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sourav Singh — ERPNext &amp; Frappe Developer">
+  <meta name="twitter:description" content="Upgrade-safe ERPNext work: v16 upgrades, custom Frappe apps, integrations and support.">
+  <meta name="twitter:image" content="https://souravsingh.site/img/og.png">
+  <link rel="me" href="https://github.com/souravs72">
+  <link rel="me" href="https://www.linkedin.com/in/sourav72/">
+  <link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt">
+  <link rel="icon" href="img/sourav-singh.jpg">
+  <link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/work-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style/styles.css" />
-
-  <!-- Primary SEO tags -->
-  <title>Sourav Singh – Software Engineer | Backend &amp; Full‑Stack Developer</title>
-  <meta name="description"
-    content="Portfolio of Sourav Singh, software engineer and backend &amp; full‑stack developer specializing in Spring Boot, REST APIs, distributed systems, and Frappe/ERPNext. Explore projects, experience, and contact details." />
-  <meta name="keywords"
-    content="Sourav Singh, souravs72, software engineer, backend engineer, full stack developer, Spring Boot, REST APIs, distributed systems, Frappe, ERPNext, portfolio" />
-  <meta name="author" content="Sourav Singh" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://souravsingh.site/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://souravsingh.site/" />
-  <meta property="og:title" content="Sourav Singh – Software Engineer Portfolio" />
-  <meta property="og:description"
-    content="Portfolio of Sourav Singh, software engineer specializing in backend systems, full‑stack development, and scalable architecture with Spring Boot, REST APIs, and Frappe/ERPNext." />
-  <meta property="og:image" content="https://souravsingh.site/img/profile-photo.JPG" />
-  <meta property="og:site_name" content="Sourav Singh" />
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sourav Singh – Software Engineer Portfolio" />
-  <meta name="twitter:description"
-    content="Portfolio of Sourav Singh, software engineer and backend &amp; full‑stack developer focused on scalable systems, Spring Boot, REST APIs, and Frappe/ERPNext." />
-  <meta name="twitter:image" content="https://souravsingh.site/img/profile-photo.JPG" />
-  <meta name="twitter:site" content="@singh_sour72" />
-  <meta property="og:locale" content="en_US" />
-  <link rel="alternate" href="https://souravsingh.site/" hreflang="en" />
-  <link rel="author" href="https://souravsingh.site/" />
-  <link rel="me" href="https://github.com/souravs72" />
-  <link rel="me" href="https://www.linkedin.com/in/sourav72/" />
-  <link rel="me" href="https://twitter.com/singh_sour72" />
-
-  <!-- Schema.org Person (helps Google show your profile for name/username searches) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sourav Singh",
-    "alternateName": ["Sourav", "souravs72", "Souravs72", "@souravs72", "singh_sour72", "Sourav Singh (souravs72)"],
-    "url": "https://souravsingh.site/",
-    "image": "https://souravsingh.site/img/profile-photo.JPG",
-    "jobTitle": "Software Engineer & Backend Engineer",
-    "description": "Sourav Singh is a software engineer, backend engineer, and full-stack developer focused on Spring Boot, REST APIs, distributed systems, and Frappe/ERPNext.",
-    "email": "souravsingh2609@gmail.com",
-    "sameAs": [
-      "https://github.com/souravs72",
-      "https://www.linkedin.com/in/sourav72/",
-      "https://twitter.com/singh_sour72",
-      "https://www.facebook.com/Souravs72",
-      "https://www.instagram.com/singh_sourav72/"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://souravsingh.site/#person",
+        "name": "Sourav Singh",
+        "alternateName": "souravs72",
+        "url": "https://souravsingh.site/",
+        "image": "https://souravsingh.site/img/sourav-singh.jpg",
+        "jobTitle": "ERPNext & Frappe Framework Developer",
+        "description": "Backend developer specialising in the Frappe Framework and ERPNext: upgrades, custom Frappe apps, integrations, performance tuning and ongoing support.",
+        "email": "mailto:souravsingh2609@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Kolkata", "addressCountry": "IN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Vishveshwarya Group of Institutions" },
+        "knowsAbout": ["ERPNext", "Frappe Framework", "Frappe HR (HRMS)", "ERPNext v16 upgrade", "Custom Frappe apps", "Python", "JavaScript", "MariaDB", "Redis", "Docker", "REST API integration", "WhatsApp API integration", "Java", "Spring Boot", "Microservices"],
+        "sameAs": ["https://github.com/souravs72", "https://www.linkedin.com/in/sourav72/"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://souravsingh.site/#service",
+        "name": "Sourav Singh — ERPNext & Frappe Development",
+        "url": "https://souravsingh.site/",
+        "image": "https://souravsingh.site/img/og.png",
+        "provider": { "@id": "https://souravsingh.site/#person" },
+        "founder": { "@id": "https://souravsingh.site/#person" },
+        "areaServed": ["Worldwide", "United States", "United Kingdom", "Middle East", "Africa", "Europe", "India"],
+        "serviceType": ["ERPNext upgrade", "ERPNext support and maintenance", "Frappe app development", "ERPNext customization", "ERPNext integration", "ERPNext performance tuning"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ERPNext services",
+          "itemListElement": [
+            { "@type": "Offer", "name": "ERPNext Health Check", "description": "Fixed-price audit of customisations, core edits, backups, performance and v16 upgrade readiness, with a written report.", "priceSpecification": { "@type": "PriceSpecification", "price": "300", "priceCurrency": "USD" } },
+            { "@type": "Offer", "name": "ERPNext version upgrade (v13/v14/v15 to v16)", "description": "Staging-first upgrade, custom-app fixes, data checks and go-live support.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "1500", "priceCurrency": "USD" } },
+            { "@type": "Offer", "name": "ERPNext Care plan", "description": "Monthly support retainer: fixes, small features, patches, monitoring.", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "500", "priceCurrency": "USD", "unitText": "month" } },
+            { "@type": "Offer", "name": "Custom Frappe app development", "description": "Upgrade-safe custom apps: DocTypes, workflows, reports, print formats, portals and API integrations." }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://souravsingh.site/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Who can upgrade my ERPNext from v14 or v15 to v16?", "acceptedAnswer": { "@type": "Answer", "text": "Sourav Singh (souravs72) runs ERPNext upgrades as a fixed-price project: a Health Check first, then the upgrade on a staging copy, fixes for anything that breaks, your sign-off, and only then production." } },
+          { "@type": "Question", "name": "Do you edit ERPNext or Frappe core files?", "acceptedAnswer": { "@type": "Answer", "text": "No. Every change goes into a separate custom Frappe app under Git, so future updates do not overwrite it." } },
+          { "@type": "Question", "name": "Do you work with clients outside India?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Work is remote, with overlap hours for the US, UK, Europe, the Gulf and Africa, invoiced in USD." } },
+          { "@type": "Question", "name": "Can you work on self-hosted ERPNext as well as Frappe Cloud?", "acceptedAnswer": { "@type": "Answer", "text": "Yes: self-hosted benches, on a server or in Docker, and Frappe Cloud sites." } },
+          { "@type": "Question", "name": "What does an ERPNext support retainer cost?", "acceptedAnswer": { "@type": "Answer", "text": "Care plans start at USD 500 per month for a fixed block of hours. A one-off Health Check is USD 300." } }
+        ]
+      }
     ]
   }
   </script>
 
-  <!-- Schema.org WebSite for brand/entity recognition -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://souravsingh.site/",
-    "name": "Sourav Singh - souravs72",
-    "alternateName": ["Sourav Singh Portfolio", "souravs72 portfolio"],
-    "description": "Official portfolio of Sourav Singh (souravs72), Software Engineer.",
-    "publisher": {
-      "@type": "Person",
-      "name": "Sourav Singh",
-      "alternateName": "souravs72"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.google.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  <style>
+    @font-face{font-family:"Anton";src:url("fonts/anton-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+    @font-face{font-family:"Work Sans";src:url("fonts/work-sans-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+    @font-face{font-family:"Work Sans";src:url("fonts/work-sans-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+
+    :root{
+      --bg:#0a0a0a; --surface:#151515; --surface-2:#1f1f1f; --ink:#efefef; --muted:#9a9a9a;
+      --accent:#b11226; --accent-text:#ee3d55; --accent-ink:#ffffff; --field:#efefef; --field-ink:#0a0a0a; --field-2:#dedede;
+      --display:"Anton", Impact, "Arial Narrow", sans-serif;
+      --text:"Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+      --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+      --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+      --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+      --m: clamp(16px, 2.2vw, 32px);
+      --gap: clamp(120px, 14vw, 220px);
+      --ease: cubic-bezier(.2,.7,.2,1);
     }
-  }
-  </script>
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.5 var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    img,svg{display:block;max-width:100%}
+    img{height:auto}
+    figure{margin:0}
+    a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+    a:hover{color:var(--ink)}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    ::selection{background:var(--accent);color:var(--accent-ink)}
+    .wrap{padding-inline:var(--m)}
+    .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+    h1,h2,h3{margin:0;font-weight:400}
+    .display{font-family:var(--display);text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
+    .head{font-family:var(--display);text-transform:uppercase;font-size:var(--step-head);line-height:.92;letter-spacing:-.01em}
+    p{margin:0}
+    .muted{color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:12px 22px;background:var(--accent);color:var(--accent-ink);font:600 var(--step-body)/1.2 var(--text);text-decoration:none;border:0;cursor:pointer;transition:transform .18s var(--ease),background-color .18s var(--ease)}
+    .btn:hover{background:#c8142b;color:var(--accent-ink);transform:translateY(-2px)}
+    .btn:active{transform:translateY(0) scale(.98)}
+    .btn.ink{background:var(--field);color:var(--field-ink)}
+    .btn.ink:hover{background:#fff;color:var(--field-ink)}
+    .btn .arr{transition:transform .18s var(--ease)}
+    .btn:hover .arr{transform:translateX(4px)}
+    .link{font-weight:600;text-decoration:underline;transition:color .15s}
+    .link:hover{color:var(--accent-text)}
+    .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+    /* ---------- hero ---------- */
+    .hero{height:100svh;min-height:620px;display:grid;grid-template-rows:auto 1fr auto;padding:var(--m)}
+    .hero-top,.hero-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+    .hero-top p{font-size:var(--step-lead);line-height:1.3;max-width:34ch}
+    .hero-top .btn{margin-top:16px}
+    .hero nav a,.hero-bottom a{margin-left:22px;font-size:var(--step-body);text-decoration:none;font-weight:600}
+    .hero nav a:hover,.hero-bottom a:hover{color:var(--accent-text)}
+    .hero-bottom{align-items:flex-end;font-size:var(--step-body)}
+    .name{align-self:center;width:100%;margin:0}
+    .name svg{width:100%;height:auto;overflow:visible}
+    .name text{font-family:var(--display);fill:var(--ink)}
+    .hero-pic{display:none}
+
+    /* ---------- called in for (list) ---------- */
+    .called{margin-top:var(--gap)}
+    .called .grid{align-items:start}
+    .called-list{grid-column:2 / span 5}
+    .called h2{margin-bottom:32px}
+    .group{margin-top:40px}
+    .group-name{color:var(--muted);font-size:var(--step-body);margin:0 0 6px}
+    .row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;min-height:40px;padding:6px 0}
+    .row .what{display:flex;align-items:baseline;gap:10px}
+    .row .dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--surface-2);transform:translateY(1px)}
+    .row .dot.hot{background:var(--accent)}
+    .row .val{color:var(--muted);font-size:var(--step-small);white-space:nowrap;font-variant-numeric:tabular-nums}
+    .called figure{grid-column:8 / span 5;margin:0;position:sticky;top:10vh}
+    .called figure img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+    figcaption{font-size:var(--step-small);color:var(--muted);margin-top:10px}
+
+    /* ---------- pricing table ---------- */
+    .pricing{margin-top:var(--gap)}
+    .ptable{width:100%;border-collapse:collapse;table-layout:fixed}
+    .ptable th,.ptable td{text-align:left;vertical-align:top;padding:20px 18px;font-size:var(--step-body);line-height:1.4}
+    .ptable thead th{vertical-align:bottom;padding-top:28px}
+    .ptable thead th:first-child{vertical-align:top;padding-left:0}
+    .ptable tbody th{color:var(--muted);font-weight:400;padding-left:0}
+    .ptable tbody tr:nth-child(odd) th,.ptable tbody tr:nth-child(odd) td{background:var(--surface)}
+    .ptable tbody tr:nth-child(odd) th{padding-left:14px}
+    .ptable tbody tr:nth-child(even) th{padding-left:14px}
+    .plan{font-family:var(--display);text-transform:uppercase;font-size:var(--step-lead);line-height:1;display:block}
+    .plans-h{margin-bottom:24px}
+    .ptable .pr td{font-size:var(--step-lead);font-variant-numeric:tabular-nums}
+    .price{display:block;font-size:var(--step-body);margin-top:6px;font-variant-numeric:tabular-nums}
+    .ptable .rec{background:var(--accent) !important;color:var(--accent-ink)}
+    .ptable tfoot td{padding-top:24px}
+    .ptable tfoot .btn{width:100%}
+    .ptable tfoot .rec .btn{background:var(--field);color:var(--field-ink)}
+    .plan-cards{display:none}
+
+    /* ---------- planner (the live thing) ---------- */
+    .planner{margin-top:120px;background:var(--field);color:var(--field-ink);padding:clamp(28px,4vw,64px) var(--m)}
+    .planner .grid{align-items:start;row-gap:32px}
+    .planner-q{grid-column:1 / span 6}
+    .planner-a{grid-column:8 / span 5}
+    .planner h2{margin-bottom:12px}
+    .planner fieldset{border:0;margin:28px 0 0;padding:0}
+    .planner legend{font-weight:600;margin-bottom:10px;padding:0}
+    .seg{display:flex;flex-wrap:wrap;gap:8px}
+    .seg label{position:relative}
+    .seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer;z-index:1}
+    .seg span{position:relative}
+    .seg span{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;background:var(--field-2);font-weight:600;transition:background-color .15s,color .15s,transform .15s}
+    .seg label:hover span{transform:translateY(-2px)}
+    .seg input:checked + span{background:var(--field-ink);color:var(--field)}
+    .seg input:focus-visible + span{outline:3px solid var(--accent);outline-offset:2px}
+    .path{font-family:var(--display);text-transform:uppercase;font-size:var(--step-head);line-height:.95;letter-spacing:-.01em}
+    .path .now{color:var(--accent)}
+    .est{font-size:var(--step-lead);margin-top:20px;font-variant-numeric:tabular-nums}
+    .est strong{font-weight:600}
+    .planner-a ul{margin:16px 0 24px;padding-left:1.1em}
+    .planner-a li{margin:4px 0}
+    .note{font-size:var(--step-small);color:#3c3c3c;margin-top:16px}
+
+    /* ---------- band ---------- */
+    .band{margin-top:var(--gap);position:relative;overflow:hidden}
+    .band img{width:100%;height:clamp(360px,72svh,820px);object-fit:cover}
+    .band figcaption{padding-inline:var(--m)}
+
+    /* ---------- staircase ---------- */
+    .stairs{margin-top:var(--gap)}
+    .stair{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;margin-top:56px}
+    .stair:first-child{margin-top:0}
+    .stair > div{grid-column:var(--c) / -1}
+    .stair .line{font-family:var(--display);text-transform:uppercase;font-size:var(--step-head);line-height:1;letter-spacing:-.01em}
+    .stair p{color:var(--muted);max-width:34ch;margin-top:12px}
+    .stair.last .line{color:var(--accent-text)}
+
+    /* ---------- work index ---------- */
+    .work{margin-top:var(--gap)}
+    .work h2{font-size:var(--step-lead);font-family:var(--text);font-weight:600;text-transform:none;margin-bottom:48px}
+    .work .grid{align-items:start}
+    .names{grid-column:1 / span 8;list-style:none;margin:0;padding:0}
+    .names a{display:flex;align-items:baseline;gap:20px;padding:10px 0;text-decoration:none;color:var(--muted);transition:color .2s}
+    .names .t{font-family:var(--display);text-transform:uppercase;font-size:var(--step-head);line-height:1;letter-spacing:-.01em;transition:transform .25s var(--ease)}
+    .names .d{font-size:var(--step-small);white-space:nowrap;margin-left:auto}
+    .names li{margin-bottom:6px}
+    .names li.on a{color:var(--ink)}
+    .names li.on .t{transform:translateX(10px)}
+    .frame{grid-column:9 / span 4;position:sticky;top:15vh;aspect-ratio:4/5;background:var(--surface)}
+    .frame > .pv{position:absolute;inset:0;opacity:0;transition:opacity .2s;overflow:hidden}
+    .frame > .pv.on{opacity:1}
+    .pv-m{display:none}
+
+    /* interface fragments (real product UI) */
+    [data-ui]{font-family:var(--text);font-size:13px;line-height:1.35;color:#1f272e;background:#f4f5f6;height:100%;display:flex;flex-direction:column}
+    [data-ui] .ui-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e6e9;font-weight:600}
+    [data-ui] .ui-bar .crumb{color:#59626a;font-weight:400}
+    [data-ui] .ui-pill{margin-left:auto;font-size:12px;padding:2px 8px;border-radius:10px;background:#e4f5e9;color:#16794c;font-weight:600}
+    [data-ui] .ui-body{padding:14px;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+    [data-ui] .ui-card{background:#fff;border:1px solid #e2e6e9;border-radius:8px;padding:12px}
+    [data-ui] .ui-label{font-size:12px;color:#59626a;margin-bottom:4px}
+    [data-ui] .ui-input{border:1px solid #dce0e3;border-radius:6px;padding:7px 9px;background:#f9fafa}
+    [data-ui] .ui-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    [data-ui] .ui-check{display:flex;align-items:center;gap:8px}
+    [data-ui] .ui-check i{width:14px;height:14px;border-radius:3px;background:#2490ef;display:inline-block}
+    [data-ui] pre{margin:0;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#1f272e;white-space:pre;overflow:hidden}
+    [data-ui] .ui-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eef0f2}
+    [data-ui] .ui-row:last-child{border-bottom:0}
+    [data-ui] .ui-card.ui-row{padding:10px 12px}
+    [data-ui] .ok{color:#16794c;font-weight:600}
+    [data-ui] .warn{color:#b05a00;font-weight:600}
+    [data-ui] .bad{color:#c4232b;font-weight:600}
+    [data-ui].dark{background:#0f1115;color:#d7dae0}
+    [data-ui].dark .ui-bar{background:#171a20;border-color:#262a31;color:#e7e9ee}
+    [data-ui].dark pre{color:#d7dae0}
+    [data-ui].dark .k{color:#7fb4ff}
+    [data-ui].dark .s{color:#9fd89a}
+
+    /* ---------- about ---------- */
+    .about{margin-top:var(--gap);padding-block:40px}
+    .about h2{margin-bottom:40px}
+    .story{columns:2;column-gap:32px;font-size:clamp(1.375rem,1.1rem + 0.9vw,2rem);line-height:1.32;color:var(--muted);text-align:left;hyphens:manual}
+    .story b{color:var(--ink);font-weight:400}
+    .hl{box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .12em;color:var(--field-ink)}
+    .hl.a{background:var(--field)}
+    .hl.b{background:#d9d0c3}
+    .hl.c{background:#9fb3b0}
+    .hl.r{background:var(--accent);color:var(--accent-ink)}
+    .story a.hl{text-decoration:none}
+    .story a.hl:hover{background:#c8142b;color:#fff}
+
+    /* ---------- faq ---------- */
+    .faq{margin-top:var(--gap)}
+    .faq .grid{align-items:start}
+    .faq-side{grid-column:1 / span 3}
+    .faq-side figure{margin:40px 0 0}
+    .faq-side img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+    .faq-text{grid-column:5 / span 8;columns:2;column-gap:56px}
+    .faq-text p{break-inside:avoid;margin:0 0 22px;line-height:1.55}
+    .faq-text b{font-weight:600}
+
+    /* ---------- contact ---------- */
+    .contact{margin-top:var(--gap)}
+    .crow{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;min-height:clamp(84px,10vw,150px);padding:18px var(--m) 18px;font-family:var(--display);text-transform:uppercase;font-size:var(--step-head);line-height:1;letter-spacing:-.01em}
+    .crow:nth-child(odd){background:var(--surface)}
+    .crow a{text-decoration:none;transition:color .15s}
+    .crow a:hover{color:var(--accent-text)}
+    .crow img{width:clamp(64px,7vw,104px);height:clamp(64px,7vw,104px);border-radius:50%;object-fit:cover;filter:grayscale(1)}
+    .crow.go{background:var(--accent);color:var(--accent-ink);justify-content:flex-start;gap:28px}
+    .crow.go .btn{background:var(--field);color:var(--field-ink);font-family:var(--text);text-transform:none;font-size:var(--step-body);letter-spacing:0;transform:translateY(-.3em)}
+    .crow .em{text-transform:none}
+
+    /* ---------- footer ---------- */
+    footer{margin-top:var(--gap);background:var(--field);color:var(--field-ink);min-height:100svh;display:flex;flex-direction:column;overflow:hidden;position:relative}
+    .foot-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;padding:clamp(40px,6vw,96px) var(--m) 0}
+    .foot-top > div:first-child{grid-column:1 / span 7}
+    .foot-top h2{font-size:var(--step-head)}
+    .foot-top .btn{margin-top:28px}
+    .foot-links{grid-column:10 / span 3;display:flex;flex-direction:column;gap:10px;font-weight:600}
+    .foot-links a{text-decoration:none}
+    .foot-links a:hover{color:var(--accent)}
+    .legal{margin-top:auto;padding:0 var(--m);display:flex;justify-content:space-between;gap:24px;font-size:var(--step-small);color:#3c3c3c}
+    .credits{max-width:80ch}
+    .credits a{color:#1a1a1a}
+    .mark{font-family:var(--display);text-transform:uppercase;white-space:nowrap;font-size:28vw;line-height:.8;letter-spacing:-.02em;margin:12px 0 0 calc(var(--m) * .4);transform:translateY(22%);transform-origin:50% 100%;color:var(--field-ink)}
+
+    /* ---------- motion ---------- */
+    /* Entrances: content is visible by default. Where the browser supports scroll-driven
+       animation, each block rises in as it enters the screen; elsewhere it simply shows. */
+    @keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+    @keyframes heroin{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    .hero .rise{animation:heroin .8s var(--ease) both}
+    .hero-top nav.rise{animation-delay:.12s}
+    .hero-bottom.rise{animation-delay:.25s}
+    .drift{transition:transform 1.2s var(--ease)}
+    @supports (animation-timeline: view()){
+      main .rise,footer .rise{animation:rise linear forwards;animation-timeline:view();animation-range:entry 0px entry 160px}
+      main .rise:nth-child(2){animation-range:entry 30px entry 190px}
+      main .rise:nth-child(n+3){animation-range:entry 60px entry 220px}
+      .name svg{animation:shrink linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+      @keyframes shrink{to{transform:scale(.93);opacity:.6}}
+      .mark{animation:grow linear both;animation-timeline:view();animation-range:entry 0% cover 60%}
+      @keyframes grow{from{transform:translateY(22%) scale(.94)}to{transform:translateY(22%) scale(1)}}
+      .band img,.called figure img{animation:slowzoom linear both;animation-timeline:view()}
+      @keyframes slowzoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important;transition:none !important}
+      .rise{opacity:1;transform:none}
+    }
+
+    /* ---------- tablet ---------- */
+    @media (max-width: 1000px){
+      .called-list{grid-column:1 / span 7}
+      .called figure{grid-column:8 / span 5}
+      .faq-side{grid-column:1 / span 12;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:end}
+      .faq-side figure{margin:0}
+      .faq-text{grid-column:1 / span 12;margin-top:40px}
+      .planner-q,.planner-a{grid-column:1 / span 12}
+      footer{min-height:0}
+      .foot-top{padding-bottom:clamp(64px,10vw,120px)}
+      .planner-a{margin-top:56px}
+      .faq-text.rise,.crow.rise,.faq-side .rise{opacity:1;transform:none}
+      .names li{margin-bottom:28px}
+    }
+
+    /* ---------- phone ---------- */
+    @media (max-width: 720px){
+      .hero{display:flex;flex-direction:column;padding:16px;height:auto;min-height:auto}
+      .hero-top{display:contents}
+      .hero-top nav{order:1;align-self:flex-end}
+      .name{order:2;margin:14vh 0 20px}
+      .hero-top > div{order:3}
+      .hero-bottom{order:4}
+      .hero-pic{order:5}
+            .hero-top nav a{margin-left:16px}
+      .hero-top p{font-size:var(--step-lead)}
+      .hero-top .btn{width:100%}
+            .hero-pic{display:block;margin:40px -16px 0;height:62vw;overflow:hidden}
+      .hero-pic img{width:100%;height:100%;object-fit:cover}
+      .hero-bottom{margin-top:24px;flex-wrap:wrap}
+      .hero-bottom a{margin-left:0;margin-right:16px}
+      .called-list{grid-column:1 / span 12}
+      .called figure{display:none}
+      .row{min-height:44px;flex-wrap:wrap}
+      .row .val{flex-basis:100%;padding-left:22px;margin-top:-6px}
+      .ptable{display:none}
+      .plan-cards{display:block}
+      .pc{padding:24px 16px;margin-top:48px;background:var(--surface)}
+      .plan-cards .pc:first-child{margin-top:0}
+      .pc.rec{background:var(--accent);color:var(--accent-ink)}
+      .pc .plan{font-size:var(--step-head)}
+      .pc dl{margin:16px 0 20px}
+      .pc dt{color:var(--muted);font-size:var(--step-small);margin-top:12px}
+      .pc.rec dt{color:#ffd9de}
+      .pc dd{margin:2px 0 0}
+      .pc .btn{width:100%}
+      .pc.rec .btn{background:var(--field);color:var(--field-ink)}
+      .stair{margin-top:40px}
+      .stair > div{grid-column:1 / span 12;padding-left:calc(var(--i) * 6vw)}
+      .stair .line{font-size:var(--step-head)}
+      .names{grid-column:1 / span 12}
+      .frame{display:none}
+      .pv-m{display:block;aspect-ratio:16/10;margin:40px 0 12px;overflow:hidden}
+      .names li:first-child .pv-m{margin-top:0}
+      .names a{color:var(--ink);flex-direction:column;gap:4px;padding:0}
+      .names .d{margin-left:0}
+      .names .t{font-size:var(--step-head)}
+      .names li.on .t{transform:none}
+      .story{columns:1;text-align:left;font-size:20px;line-height:1.4}
+      .faq-side{grid-template-columns:1fr}
+      .faq-text{columns:1}
+      .crow{font-size:var(--step-head);min-height:84px;padding-inline:16px}
+      .crow .em{font-size:var(--step-lead);font-family:var(--text);font-weight:600}
+      .crow img{width:56px;height:56px}
+      .crow.go{justify-content:space-between}
+      .foot-top > div:first-child,.foot-links{grid-column:1 / span 12}
+      .foot-top h2{font-size:var(--step-head)}
+      .foot-top .btn{width:100%}
+      .foot-links{flex-direction:row;flex-wrap:wrap;gap:16px;margin-top:32px}
+      .legal{flex-direction:column;gap:8px}
+      .mark{font-size:34vw}
+    }
+  </style>
 </head>
-
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="#home" class="logo">Portfolio</a>
 
-      <i class="fa-solid fa-bars" id="menu-icon" aria-label="Toggle navigation menu"></i>
-
-      <nav class="navbar" aria-label="Primary">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header class="hero">
+  <div class="hero-top">
+    <div class="rise">
+      <p>ERPNext &amp; Frappe developer. I fix and upgrade ERPNext without touching core.</p>
+      <a class="btn" href="#plans">Book a Health Check <span class="arr" aria-hidden="true">→</span></a>
     </div>
-  </header>
+    <nav aria-label="Main" class="rise">
+      <a href="#plans">Services</a><a href="#work">Work</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
 
-  <main>
-  <!-- Home section design-->
-  <section class="home" id="home">
-    <div class="container home-layout">
-      <div class="home-content">
-      <h3>Hi, Myself</h3>
-      <h1>Sourav Singh – Software Engineer</h1>
-      <p class="home-handle">@souravs72</p>
-      <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>
-        Backend-focused developer experienced with Spring Boot, Spring MVC, Spring Integration, and REST APIs.
-        I deliver end-to-end features across frontend and backend with a strong client support orientation and
-        have recently been building rapid business apps and custom workflows on Frappe/ERPNext.
-      </p>
-      <ul class="home-highlights">
-        <li>Spring Boot • REST APIs</li>
-        <li>Frappe/ERPNext Workflows</li>
-        <li>Open Source Projects</li>
+  <h1 class="name" aria-label="Sourav Singh, ERPNext and Frappe developer">
+    <svg viewBox="0 -1760 10766 1760" aria-hidden="true" focusable="false"><text x="0" y="0" font-size="2048" textLength="10766" lengthAdjust="spacingAndGlyphs">SOURAV SINGH</text></svg>
+  </h1>
+
+  <div class="hero-bottom rise">
+    <span>Kolkata, India · working US, UK, EU &amp; Gulf hours</span>
+    <span><a href="https://github.com/souravs72" rel="me">GitHub</a><a href="https://www.linkedin.com/in/sourav72/" rel="me">LinkedIn</a></span>
+  </div>
+  <figure class="hero-pic" aria-hidden="true"><img src="assets/howrah-bridge-foggy.jpg" alt="" width="1920" height="1248"></figure>
+</header>
+
+<main>
+  <!-- What I'm called in for -->
+  <section class="called wrap" aria-labelledby="called-h">
+    <div class="grid">
+      <div class="called-list">
+        <h2 id="called-h" class="head rise">What I'm called in for</h2>
+
+        <div class="group rise">
+          <p class="group-name">Upgrades</p>
+          <div class="row"><span class="what"><i class="dot hot"></i>A v15 to v16 migration fails halfway</span><span class="val">Upgrade · from $1,500</span></div>
+          <div class="row"><span class="what"><i class="dot hot"></i>Patches error out during bench migrate</span><span class="val">Upgrade</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>A custom app stops loading after an update</span><span class="val">Health Check · $300</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>The site is stuck on v13 or v14</span><span class="val">Upgrade</span></div>
+        </div>
+
+        <div class="group rise">
+          <p class="group-name">Speed</p>
+          <div class="row"><span class="what"><i class="dot hot"></i>A report takes minutes once data grows</span><span class="val">Health Check</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>Timeouts when many people work at once</span><span class="val">Care plan</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>Background jobs pile up in the queue</span><span class="val">Care plan</span></div>
+        </div>
+
+        <div class="group rise">
+          <p class="group-name">Ownership</p>
+          <div class="row"><span class="what"><i class="dot hot"></i>Someone edited ERPNext core</span><span class="val">Health Check</span></div>
+          <div class="row"><span class="what"><i class="dot hot"></i>The implementer disappeared</span><span class="val">Care plan · from $500/mo</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>Backups run, but no one has tried a restore</span><span class="val">Health Check</span></div>
+        </div>
+
+        <div class="group rise">
+          <p class="group-name">Building</p>
+          <div class="row"><span class="what"><i class="dot"></i>WhatsApp messages sent from ERPNext</span><span class="val">Custom app</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>Postman and OpenAPI docs for your DocTypes</span><span class="val">Custom app</span></div>
+          <div class="row"><span class="what"><i class="dot"></i>New DocTypes, workflows and print formats</span><span class="val">Custom app</span></div>
+        </div>
+      </div>
+      <figure class="rise">
+        <img src="assets/calcutta-blue-trams-kolkata-india.jpg" alt="Two blue trams on their tracks in Kolkata" width="1400" height="933" loading="lazy">
+        <figcaption>Kolkata's blue trams, a few streets from where the work is done.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="pricing wrap" id="plans" aria-labelledby="plans-h">
+    <h2 id="plans-h" class="head rise plans-h">Ways to work together</h2>
+    <table class="ptable rise">
+      <colgroup><col style="width:22%"><col><col><col><col></colgroup>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col"><span class="plan">Health Check</span></th>
+          <th scope="col"><span class="plan">Upgrade</span></th>
+          <th scope="col" class="rec"><span class="plan">Care plan</span></th>
+          <th scope="col"><span class="plan">Custom app</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pr"><th scope="row">Price</th><td>$300 once</td><td>from $1,500</td><td class="rec">from $500 a month</td><td>quoted per project</td></tr>
+        <tr><th scope="row">Right when</th><td>You're not sure what's wrong</td><td>You're stuck on v13, v14 or v15</td><td class="rec">You have no Frappe developer in-house</td><td>ERPNext doesn't cover a process</td></tr>
+        <tr><th scope="row">You get</th><td>A written report in about a week</td><td>Your site on v16, tested on a copy first</td><td class="rec">A fixed block of hours every month</td><td>An app in your own Git repo</td></tr>
+        <tr><th scope="row">It covers</th><td>Core edits, custom apps, backups, slow reports, v16 readiness</td><td>Patches, custom-app fixes, data checks, go-live night</td><td class="rec">Fixes, small features, patches, monitoring</td><td>DocTypes, workflows, reports, print formats, APIs</td></tr>
+        <tr><th scope="row">Then</th><td>A fixed price for whatever it finds</td><td>Optional care plan</td><td class="rec">Cancel with a month's notice</td><td>Handover notes and tests</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td></td>
+          <td><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20Health%20Check">Book it</a></td>
+          <td><a class="btn" href="#planner">Plan it</a></td>
+          <td class="rec"><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20Care%20plan">Start one</a></td>
+          <td><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=Custom%20Frappe%20app">Describe it</a></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="plan-cards">
+            <div class="pc"><span class="plan">Health Check</span><span class="price">$300 once</span><dl><dt>Right when</dt><dd>You're not sure what's wrong</dd><dt>You get</dt><dd>A written report in about a week</dd><dt>It covers</dt><dd>Core edits, custom apps, backups, slow reports, v16 readiness</dd></dl><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20Health%20Check">Book it</a></div>
+      <div class="pc"><span class="plan">Upgrade</span><span class="price">from $1,500</span><dl><dt>Right when</dt><dd>You're stuck on v13, v14 or v15</dd><dt>You get</dt><dd>Your site on v16, tested on a copy first</dd><dt>It covers</dt><dd>Patches, custom-app fixes, data checks, go-live night</dd></dl><a class="btn" href="#planner">Plan it</a></div>
+      <div class="pc rec"><span class="plan">Care plan</span><span class="price">from $500 / month</span><dl><dt>Right when</dt><dd>You have no Frappe developer in-house</dd><dt>You get</dt><dd>A fixed block of hours every month</dd><dt>It covers</dt><dd>Fixes, small features, patches, monitoring</dd></dl><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20Care%20plan">Start one</a></div>
+      <div class="pc"><span class="plan">Custom app</span><span class="price">quoted per project</span><dl><dt>Right when</dt><dd>ERPNext doesn't cover a process</dd><dt>You get</dt><dd>An app in your own Git repo</dd><dt>It covers</dt><dd>DocTypes, workflows, reports, print formats, APIs</dd></dl><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=Custom%20Frappe%20app">Describe it</a></div>
+    </div>
+  </section>
+
+  <!-- Live thing: upgrade planner -->
+  <section class="planner" id="planner" aria-labelledby="planner-h">
+    <div class="grid">
+      <form class="planner-q rise" id="planform" onsubmit="return false">
+        <h2 id="planner-h" class="head">Plan your upgrade</h2>
+        <p>Four answers give you the path to v16 and a rough price.</p>
+        <fieldset><legend>Your ERPNext version now</legend><div class="seg">
+          <label><input type="radio" name="v" value="13"><span>v13</span></label>
+          <label><input type="radio" name="v" value="14" checked><span>v14</span></label>
+          <label><input type="radio" name="v" value="15"><span>v15</span></label>
+        </div></fieldset>
+        <fieldset><legend>Where it runs</legend><div class="seg">
+          <label><input type="radio" name="h" value="cloud" checked><span>Frappe Cloud</span></label>
+          <label><input type="radio" name="h" value="self"><span>Our own server</span></label>
+        </div></fieldset>
+        <fieldset><legend>Custom apps installed</legend><div class="seg">
+          <label><input type="radio" name="a" value="0"><span>None</span></label>
+          <label><input type="radio" name="a" value="1" checked><span>1 to 3</span></label>
+          <label><input type="radio" name="a" value="4"><span>4 or more</span></label>
+        </div></fieldset>
+        <fieldset><legend>Has anyone edited core files?</legend><div class="seg">
+          <label><input type="radio" name="c" value="no"><span>No</span></label>
+          <label><input type="radio" name="c" value="yes"><span>Yes</span></label>
+          <label><input type="radio" name="c" value="unsure" checked><span>Not sure</span></label>
+        </div></fieldset>
+      </form>
+      <div class="planner-a rise" aria-live="polite">
+        <p class="path" id="path">v14 <span aria-hidden="true">→</span> v15 <span aria-hidden="true">→</span> <span class="now">v16</span></p>
+        <p class="est" id="est">Two version hops. Rough price <strong>$2,500 to $3,400</strong>.</p>
+        <ul id="steps">
+          <li>Health Check first, $300, to find core edits and fragile apps</li>
+          <li>Each hop runs on a staging copy and gets tested</li>
+          <li>Your custom apps are fixed at every hop</li>
+          <li>Your team signs off before production moves</li>
+        </ul>
+        <a class="btn" id="mail" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20upgrade%20plan%3A%20v14%20to%20v16">Email me this plan <span class="arr" aria-hidden="true">→</span></a>
+        <p class="note">A rough guide, not a quote. The Health Check ends with a fixed price.</p>
+      </div>
+    </div>
+  </section>
+
+  <figure class="band rise">
+    <img class="drift" src="assets/howrah-bridge-foggy.jpg" alt="Howrah Bridge over the Hooghly river in winter fog, birds over the water" width="1920" height="1248" loading="lazy">
+    <figcaption>Howrah Bridge in winter fog, Kolkata.</figcaption>
+  </figure>
+
+  <!-- How an upgrade runs -->
+  <section class="stairs wrap" aria-labelledby="stairs-h">
+    <div class="stair rise" style="--c:1;--i:0"><div><h2 id="stairs-h" class="line">First, a copy of your site.</h2><p>Production is cloned to a staging bench, so nothing your team relies on is touched.</p></div></div>
+    <div class="stair rise" style="--c:3;--i:1"><div><p class="line">Then it upgrades there.</p><p>One version at a time: patches run, custom apps get fixed, data gets checked.</p></div></div>
+    <div class="stair rise" style="--c:5;--i:2"><div><p class="line">Your team tries it.</p><p>A few days of real work on the staging copy, then your sign-off.</p></div></div>
+    <div class="stair rise last" style="--c:7;--i:3"><div><p class="line">Production moves at night.</p><p>The same steps in your off-hours, after a backup that was actually restored, with a way back.</p></div></div>
+  </section>
+
+  <!-- Work -->
+  <section class="work wrap" id="work" aria-labelledby="work-h">
+    <h2 id="work-h" class="rise">Code you can read before hiring me</h2>
+    <div class="grid">
+      <ul class="names" id="names">
+        <li class="on" data-i="0">
+          <div class="pv-m" aria-hidden="true"></div>
+          <a href="https://github.com/souravs72/frappe_postman_sync"><span class="t">Postman Sync</span><span class="d">Frappe app · 2025</span></a>
+        </li>
+        <li data-i="1">
+          <div class="pv-m" aria-hidden="true"></div>
+          <a href="https://github.com/souravs72/claude-mcp-setup"><span class="t">MCP for Frappe</span><span class="d">AI tooling · 2025</span></a>
+        </li>
+        <li data-i="2">
+          <div class="pv-m" aria-hidden="true"></div>
+          <a href="#contact"><span class="t">Health Check</span><span class="d">Frappe app · in progress</span></a>
+        </li>
+        <li data-i="3">
+          <div class="pv-m" aria-hidden="true"></div>
+          <a href="https://github.com/souravs72/origostack"><span class="t">OrigoStack</span><span class="d">Microservices · 2025</span></a>
+        </li>
+        <li data-i="4">
+          <div class="pv-m" aria-hidden="true"></div>
+          <a href="https://github.com/souravs72/microservices-project"><span class="t">Spring platform</span><span class="d">Spring Boot · 2025</span></a>
+        </li>
       </ul>
-      <div class="social-media">
-        <a href="https://www.facebook.com/Souravs72" target="_blank" rel="me noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com/singh_sour72" target="_blank" rel="me noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/sourav72/" target="_blank" rel="me noopener noreferrer"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/singh_sourav72/" target="_blank" rel="me noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="home-cta">
-        <a href="#portfolio" class="btn">View Projects</a>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-        </div>
-      </div>
 
-      <div class="home-img">
-        <img src="img/profile-photo.JPG" alt="Portrait of Sourav Singh" loading="lazy" fetchpriority="high" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About section-->
-
-  <section class="about" id="about">
-    <div class="container about-layout">
-      <div class="about-img">
-        <img src="img/about-pic.jpeg" alt="Sourav Singh speaking about software development" loading="lazy" />
-      </div>
-      <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Software Developer</h3>
-      <h4>Assistant System Engineer, TCS (Former)</h4>
-
-      <div class="about-accordion">
-        <details open>
-          <summary>Professional Summary</summary>
-          <div class="about-panel">
-            <p>
-              Backend-focused developer experienced with Spring Boot, Spring MVC, Spring Integration, and REST APIs.
-              Delivering end-to-end features across frontend and backend with strong client support orientation.
-              Recently building rapid business apps and custom workflows on Frappe/ERPNext.
-            </p>
+      <div class="frame" id="frame" aria-hidden="true">
+        <div class="pv on">
+          <div data-ui>
+            <div class="ui-bar"><span class="crumb">Frappe Postman Sync /</span> API Generator <span class="ui-pill">Active</span></div>
+            <div class="ui-body">
+              <div class="ui-card ui-2">
+                <div><div class="ui-label">Generation Type</div><div class="ui-input">Entire Module</div></div>
+                <div><div class="ui-label">Module Name</div><div class="ui-input">Selling</div></div>
+                <div><div class="ui-label">Collection Title</div><div class="ui-input">Selling API</div></div>
+                <div><div class="ui-label">&nbsp;</div><div class="ui-check"><i></i> Auto Generate</div></div>
+              </div>
+              <div class="ui-card"><div class="ui-label">API Endpoints</div>
+<pre>GET    /api/resource/Customer
+POST   /api/resource/Customer
+GET    /api/resource/Customer/{name}
+PUT    /api/resource/Customer/{name}
+DELETE /api/resource/Customer/{name}
+GET    /api/resource/Quotation
+POST   /api/resource/Quotation
+GET    /api/resource/Sales Order
+POST   /api/resource/Sales Order</pre></div>
+              <div class="ui-card ui-row"><span>Synced to Postman</span><span class="ok">42 requests</span></div>
+            </div>
           </div>
-        </details>
-
-        <details>
-          <summary>Core Competencies</summary>
-          <div class="about-panel">
-            <ul class="about-list">
-              <li>Java, Spring Boot, Spring MVC, Spring Integration</li>
-              <li>REST API design, microservices, distributed systems</li>
-              <li>Frappe/ERPNext custom DocTypes, server scripts, workflows</li>
-              <li>Automation, incident resolution, client-facing delivery</li>
-            </ul>
+        </div>
+        <div class="pv">
+          <div data-ui>
+            <div class="ui-bar">MCP servers <span class="ui-pill">6 connected</span></div>
+            <div class="ui-body">
+              <div class="ui-card">
+                <div class="ui-row"><span>frappe</span><span class="ok">connected</span></div>
+                <div class="ui-row"><span>github</span><span class="ok">connected</span></div>
+                <div class="ui-row"><span>jira</span><span class="ok">connected</span></div>
+                <div class="ui-row"><span>filesystem</span><span class="ok">connected</span></div>
+                <div class="ui-row"><span>bash</span><span class="ok">connected</span></div>
+                <div class="ui-row"><span>web</span><span class="ok">connected</span></div>
+              </div>
+              <div class="ui-card"><div class="ui-label">frappe tools</div>
+<pre>get_document(doctype, name)
+list_documents(doctype, filters)
+create_document(doctype, data)
+update_document(doctype, name, data)
+run_report(report_name, filters)</pre></div>
+            </div>
           </div>
-        </details>
-
-        <details>
-          <summary>Key Achievements</summary>
-          <div class="about-panel">
-            <ul class="about-list">
-              <li>Built a production task and automation system in Spring Boot serving 7,000+ users</li>
-              <li>Shipped multiple open-source projects (see Portfolio section)</li>
-            </ul>
+        </div>
+        <div class="pv">
+          <div data-ui>
+            <div class="ui-bar"><span class="crumb">ERPNext Health Check /</span> Report</div>
+            <div class="ui-body">
+              <div class="ui-card">
+                <div class="ui-row"><span>Edits inside erpnext core</span><span class="bad">3 files</span></div>
+                <div class="ui-row"><span>Custom apps</span><span class="ok">2 installed</span></div>
+                <div class="ui-row"><span>Failed patches</span><span class="ok">None</span></div>
+                <div class="ui-row"><span>Scheduler</span><span class="ok">Running</span></div>
+                <div class="ui-row"><span>Last restored backup</span><span class="warn">Never</span></div>
+                <div class="ui-row"><span>Slowest report</span><span class="warn">94 s</span></div>
+                <div class="ui-row"><span>Ready for v16</span><span class="bad">Not yet</span></div>
+              </div>
+              <div class="ui-card"><div class="ui-label">Next step</div>Move the 3 core edits into a custom app, then upgrade on a staging copy.</div>
+            </div>
           </div>
-        </details>
+        </div>
+        <div class="pv">
+          <div data-ui class="dark">
+            <div class="ui-bar">OrigoStack · core services</div>
+            <div class="ui-body">
+<pre><span class="k">signaling</span>        WebSocket rooms, ICE/SDP
+<span class="k">sfu-cluster</span>      media workers
+<span class="k">turn-stun</span>        NAT traversal (coturn)
+<span class="k">auth-identity</span>    OAuth2/OIDC, JWT, RBAC
+<span class="k">control-plane</span>    rooms, recordings, billing
+<span class="k">recording</span>        RTP capture, FFmpeg, S3
+<span class="k">chat</span>             presence on Redis/NATS
+<span class="k">notification</span>     email, push, SMS
+<span class="k">billing-quota</span>    usage metering
 
-        <details>
-          <summary>Education & Certifications</summary>
-          <div class="about-panel">
-            <p>
-              See full details in my CV. Download the latest version below.
-            </p>
+<span class="s">Spring Boot · Go · FastAPI · TypeScript</span></pre>
+            </div>
           </div>
-        </details>
-      </div>
-
-      <div class="about-cta">
-        <a href="pdf/Resume.pdf" class="btn" download>Download CV</a>
-        <a href="#portfolio" class="btn btn-secondary">View Projects</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="heading">My <span>Services</span></h2>
-      <div class="services-container">
-        <!-- 1. Backend -->
-        <div class="services-box">
-          <i class="fa-solid fa-server"></i>
-          <h3>Backend Development</h3>
-          <p>
-            Design and implement robust APIs, microservices, and integrations using Java, Spring Boot, and REST.
-            Focus on reliability, observability, and clean domain boundaries so systems scale smoothly.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <!-- 2. Frontend -->
-        <div class="services-box">
-          <i class="fa-solid fa-palette"></i>
-          <h3>Frontend Development</h3>
-          <p>
-            Build responsive, accessible UIs that feel fast and intuitive on any device using modern HTML, CSS, and
-            JavaScript. Translate product requirements into polished, production‑ready experiences.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <!-- 3. Cloud / AWS -->
-        <div class="services-box">
-          <i class="fa-solid fa-cloud"></i>
-          <h3>Cloud &amp; AWS Infrastructure</h3>
-          <p>
-            Design, deploy, and operate services on AWS with a focus on reliability and cost efficiency. Use managed
-            services, CI/CD pipelines, and infrastructure‑as‑code to keep deployments repeatable and safe.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <!-- 4. Frappe / ERPNext -->
-        <div class="services-box">
-          <i class="fa-solid fa-cubes"></i>
-          <h3>Frappe / ERPNext Solutions</h3>
-          <p>
-            Ship custom DocTypes, server scripts, workflows, and dashboards on Frappe/ERPNext. Automate business
-            processes and integrate external systems via clean, well‑documented REST APIs.
-          </p>
-          <a href="#" class="btn">Read More</a>
+        <div class="pv">
+          <div data-ui class="dark">
+            <div class="ui-bar">docker-compose.yml</div>
+            <div class="ui-body">
+<pre><span class="k">services:</span>
+  postgres-auth:
+    image: <span class="s">postgres:16.10-alpine3.22</span>
+  postgres-user:
+    image: <span class="s">postgres:16.10-alpine3.22</span>
+  postgres-order:
+    image: <span class="s">postgres:16.10-alpine3.22</span>
+  postgres-inventory:
+    image: <span class="s">postgres:16.10-alpine3.22</span>
+  redis:
+    image: <span class="s">redis:7-alpine</span>
+  kafka:
+    image: <span class="s">confluentinc/cp-kafka:7.4.0</span>
+  api-gateway:
+  auth-service:</pre>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Design -->
+  <!-- About -->
+  <section class="about wrap" aria-labelledby="about-h">
+    <h2 id="about-h" class="head rise">Four years of backends</h2>
+    <p class="story rise"><b>I'm Sourav Singh,</b> a backend developer in <span class="hl a">Kolkata</span>. I spent <span class="hl b">four years</span> on Java and Spring Boot at <span class="hl c">TCS</span> and an investment company before ERP work took over, and I have built on <span class="hl a">Frappe and ERPNext since 2024</span>. Along the way I built a workflow system used by <span class="hl b">7,000+ people</span>, ERPNext integrations with <span class="hl c">WhatsApp, Postman and OpenAPI</span>, and a CI/CD pipeline that cut deploys from two hours to thirty minutes. I work the way an ERP needs: every change in a custom app under Git, staging before production, backups restored rather than assumed, and updates written for the people who run the business, not for other developers. <a class="hl r" href="#contact">Tell me what's broken.</a></p>
+  </section>
 
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-        <img src="img/1.jpg" alt="OrigoStack Project Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>OrigoStack</h4>
-          <p>
-            Open, polyglot foundation to experiment and ship robust real-time systems with confidence.
-          </p>
-          <a href="https://github.com/souravs72/OrigoStack" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
+  <!-- FAQ -->
+  <section class="faq wrap" aria-labelledby="faq-h">
+    <div class="grid">
+      <div class="faq-side">
+        <h2 id="faq-h" class="head rise">Questions</h2>
+        <figure class="rise">
+          <img src="assets/taxi-driver-in-kolkata-yellow-taxi-india.jpg" alt="A driver at the wheel of a Kolkata yellow Ambassador taxi" width="1600" height="1066" loading="lazy">
+          <figcaption>A Kolkata yellow taxi, still on the road.</figcaption>
+        </figure>
       </div>
-
-        <div class="portfolio-box">
-        <img src="img/2.jpg" alt="Distributed Chat App Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>Distributed Chat App</h4>
-          <p>
-            Production-ready chat using Spring Boot microservices, designed for scale.
-          </p>
-          <a href="https://github.com/souravs72/distributed-chat-app" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-        <div class="portfolio-box">
-        <img src="img/3.jpg" alt="Microservices Project Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>Microservices Project</h4>
-          <p>
-            Spring Boot based microservices project with core building blocks for service orchestration.
-          </p>
-          <a href="https://github.com/souravs72/microservices-project" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-        <div class="portfolio-box">
-        <img src="img/4.jpg" alt="CG Notification Project Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>CG Notification</h4>
-          <p>
-            WhatsApp integration for Frappe using WAAPI. Enable messaging workflows inside ERPNext.
-          </p>
-          <a href="https://github.com/souravs72/cg-notification" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-        <div class="portfolio-box">
-        <img src="img/5.jpg" alt="Frappe Postman Sync Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>Frappe Postman Sync</h4>
-          <p>
-            Utilities to streamline Frappe REST API testing and collection sync with Postman.
-          </p>
-          <a href="https://github.com/souravs72/frappe_postman_sync" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-        <div class="portfolio-box">
-        <img src="img/6.jpg" alt="Claude MCP Setup Preview" loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h4>Claude MCP Setup</h4>
-          <p>
-            Production-ready Model Context Protocol servers: GitHub, Jira, Frappe, web, bash & more.
-          </p>
-          <a href="https://github.com/souravs72/claude-mcp-setup" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-        </div>
+      <div class="faq-text rise">
+        <p><b>Who can upgrade my ERPNext from v14 or v15 to v16?</b> I do it as a fixed-price project: a Health Check first, then the upgrade on a staging copy, fixes for anything that breaks, your team's sign-off, and only then production.</p>
+        <p><b>Do you edit ERPNext or Frappe core?</b> Never. Every change lives in a separate custom app under Git, so the next update can't wipe it out.</p>
+        <p><b>Can you take over a system someone else built?</b> That's most of the work. The Health Check maps what was changed, where, and what it will cost to make safe.</p>
+        <p><b>Do you work with clients outside India?</b> Yes. I keep overlap hours with the US, UK, Europe, the Gulf and Africa, and invoice international clients in USD.</p>
+        <p><b>Self-hosted or Frappe Cloud?</b> Both: benches on your own server or in Docker, and Frappe Cloud sites.</p>
+        <p><b>How long does an upgrade take?</b> One version hop usually takes one to three weeks, including the days your team spends testing. The Health Check gives you a date.</p>
+        <p><b>Who owns the code?</b> You do. It lives in your repository from the first day, with notes on every change.</p>
+        <p><b>What does ongoing support cost?</b> Care plans start at $500 a month for a fixed block of hours, with patches and monitoring included.</p>
+        <p><b>Do you build new features too?</b> Yes: DocTypes, workflows, reports, print formats, portals and integrations, built as proper Frappe apps with tests.</p>
       </div>
     </div>
   </section>
 
-  <!--Contact Section (loaded via partial) -->
-  <section class="contact" id="contact"></section>
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="crow rise"><h2 id="contact-h">Sourav Singh</h2><img src="img/sourav-singh.jpg" alt="Portrait of Sourav Singh" width="360" height="360" loading="lazy"></div>
+    <div class="crow rise"><a class="em" href="mailto:souravsingh2609@gmail.com">souravsingh2609@gmail.com</a></div>
+    <div class="crow rise"><span>Kolkata, India</span></div>
+    <div class="crow rise"><span>Replies within a working day</span></div>
+    <div class="crow rise"><a class="em" href="https://github.com/souravs72" rel="me">github.com/souravs72</a></div>
+    <div class="crow go rise"><span>Say hello</span><a class="btn" href="mailto:souravsingh2609@gmail.com?subject=Hello%20from%20souravsingh.site">Write an email <span class="arr" aria-hidden="true">→</span></a></div>
+  </section>
+</main>
 
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2024 by @Souravs72 | All Rights Reserved</p>
+<footer>
+  <div class="foot-top">
+    <div>
+      <h2 class="head">Got an ERPNext problem?</h2>
+      <a class="btn" href="mailto:souravsingh2609@gmail.com?subject=ERPNext%20problem">Send it over <span class="arr" aria-hidden="true">→</span></a>
     </div>
-    <div class="footer-iconTop">
-      <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+    <div class="foot-links">
+      <a href="https://github.com/souravs72" rel="me">GitHub</a>
+      <a href="https://www.linkedin.com/in/sourav72/" rel="me">LinkedIn</a>
+      <a href="mailto:souravsingh2609@gmail.com">Email</a>
+      <a href="pdf/Resume.pdf">Résumé</a>
     </div>
-  </footer>
+  </div>
+  <div class="legal">
+    <p class="credits">Pictures: <a href="https://commons.wikimedia.org/wiki/File:Howrah_Bridge,_Foggy.jpg">“Howrah Bridge, Foggy”</a> by Dey.sandip, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Calcutta_blue_trams,_Kolkata,_India.jpg">“Calcutta blue trams”</a> and <a href="https://commons.wikimedia.org/wiki/File:Taxi_driver_in_Kolkata,_Yellow_taxi,_India.jpg">“Taxi driver in Kolkata”</a> by Vyacheslav Argenberg, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; all via Wikimedia Commons.</p>
+    <p>© 2026 Sourav Singh · <a href="/llms.txt">llms.txt</a></p>
+  </div>
+  <div class="mark" aria-hidden="true">souravs72</div>
+</footer>
 
+<script>
+(() => {
+  // work index: active name swaps the preview
+  const names = [...document.querySelectorAll('#names li')];
+  const pvs = [...document.querySelectorAll('#frame .pv')];
+  const activate = (i) => {
+    names.forEach((n, k) => n.classList.toggle('on', k === i));
+    pvs.forEach((p, k) => p.classList.toggle('on', k === i));
+  };
+  names.forEach((li, i) => {
+    const a = li.querySelector('a');
+    a.addEventListener('mouseenter', () => activate(i));
+    a.addEventListener('focus', () => activate(i));
+  });
+  // phone: each name carries its own preview
+  pvs.forEach((p, i) => { const slot = names[i] && names[i].querySelector('.pv-m'); if (slot) slot.appendChild(p.firstElementChild.cloneNode(true)); });
 
-  <!-- Email Sender -->
-
-
-
-  <!-- Scroll JS -->
-  <script src="https://unpkg.com/scrollreveal" defer></script>
-
-  <!-- Typed Js-->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
-
-  <!-- Contact partial loader -->
-  <script src="js/contact.js" defer></script>
-
-  <!-- MAIN js -->
-  <script src="js/index.js" defer></script>
+  // upgrade planner
+  const form = document.getElementById('planform');
+  const words = ['', 'One version hop', 'Two version hops', 'Three version hops'];
+  const r50 = (n) => Math.round(n / 50) * 50;
+  const usd = (n) => '$' + n.toLocaleString('en-US');
+  const update = () => {
+    const f = new FormData(form);
+    const v = +f.get('v'), h = f.get('h'), a = +f.get('a'), c = f.get('c');
+    const hops = 16 - v;
+    let low = 1500 + (hops - 1) * 600;
+    low += a === 0 ? 0 : a === 1 ? 500 : 1500;
+    low += c === 'yes' ? 800 : c === 'unsure' ? 400 : 0;
+    low += h === 'self' ? 300 : 0;
+    const high = r50(low * 1.35);
+    const seq = []; for (let x = v; x <= 16; x++) seq.push('v' + x);
+    document.getElementById('path').innerHTML = seq.map((s, k) => k === seq.length - 1 ? '<span class="now">' + s + '</span>' : s).join(' <span aria-hidden="true">→</span> ');
+    document.getElementById('est').innerHTML = words[hops] + '. Rough price <strong>' + usd(low) + ' to ' + usd(high) + '</strong>.';
+    const steps = ['Health Check first, $300, to find core edits and fragile apps'];
+    steps.push(hops > 1 ? 'Each of the ' + hops + ' hops runs on a staging copy and gets tested' : 'The upgrade runs on a staging copy and gets tested');
+    if (a > 0) steps.push(a === 4 ? 'Your 4+ custom apps are fixed at every hop' : 'Your custom apps are fixed at every hop');
+    if (c !== 'no') steps.push(c === 'yes' ? 'Core edits move into a custom app before anything upgrades' : 'Any core edits found move into a custom app first');
+    if (h === 'self') steps.push('Your server is checked: Python, Node, MariaDB and Redis versions');
+    steps.push('Your team signs off before production moves');
+    document.getElementById('steps').innerHTML = steps.map(s => '<li>' + s + '</li>').join('');
+    const body = 'Hi Sourav,%0D%0A%0D%0AMy ERPNext is on v' + v + ', hosted on ' + (h === 'self' ? 'our own server' : 'Frappe Cloud') + ', with ' + (a === 0 ? 'no' : a === 1 ? '1 to 3' : '4 or more') + ' custom apps. Core edited: ' + c + '.%0D%0AYour planner suggested ' + usd(low) + ' to ' + usd(high) + '.%0D%0A%0D%0ACan we start with a Health Check?';
+    document.getElementById('mail').href = 'mailto:souravsingh2609@gmail.com?subject=' + encodeURIComponent('ERPNext upgrade plan: v' + v + ' to v16') + '&body=' + body;
+  };
+  form.addEventListener('change', update);
+  update();
+})();
+</script>
 </body>
-
 </html>
